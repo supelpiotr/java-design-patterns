@@ -13,6 +13,12 @@ public class Registry {
     public Item createItem (String type){
         Item item = null;
 
+        try {
+            item = (Item)(items.get(type)).clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+
         return item;
     }
 
