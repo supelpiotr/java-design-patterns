@@ -13,6 +13,7 @@ public class WebsiteFactory {
             case SHOP: {
                 return new Shop();
             }
+
             default: {
                 return null;
             }

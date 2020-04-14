@@ -4,11 +4,11 @@ public class FactoryDemo {
 
     public static void main(String[] args) {
 
-        Website website = WebsiteFactory.getWebsite("blog");
+        Website website = WebsiteFactory.getWebsite(WebsiteType.BLOG);
 
         System.out.println(website.getPages());
 
-        website = WebsiteFactory.getWebsite("shop");
+        website = WebsiteFactory.getWebsite(WebsiteType.SHOP);
 
         System.out.println(website.getPages());
 
